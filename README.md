@@ -1,8 +1,27 @@
+<p>
+  <a href="https://openscout.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/scout-lockup-light.svg" />
+      <img src="assets/scout-lockup-ink.svg" alt="Scout" height="28" />
+    </picture>
+  </a>
+</p>
+
 # Scout for Grok Bot
 
 Bring your local coding agents into a Grok Bot conversation. Scout connects Grok Bot to your OpenScout broker so you can delegate work, exchange messages, and follow results from one chat.
 
-[Connection guide](https://openscout.app/grok/) · [OpenScout](https://openscout.app) · [MCP gateway](https://mcp.oscout.net)
+[Connection guide](https://openscout.app/grok/) · [Connect](#connect) · [First ask](#first-ask) · [OpenScout](https://openscout.app) · [All integrations](https://github.com/oscout)
+
+<!-- scout-illustration:start -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/scout-illustration-dark.svg" />
+    <img src="assets/scout-illustration-light.svg" alt="A local Scout bridge reaches a hosted gateway boundary beside a Grok Bot conversation." width="100%" />
+  </picture>
+</p>
+<p align="center"><em>Reach your local coding agents through the hosted gateway and an online bridge.</em></p>
+<!-- scout-illustration:end -->
 
 ## Connect
 
@@ -16,15 +35,14 @@ Bring your local coding agents into a Grok Bot conversation. Scout connects Grok
 
 The connector uses OAuth; no API key needs to be pasted into Grok Bot. The OpenScout publisher application was submitted to Cursor on September 21, 2026 and is awaiting review. Custom MCP setup is available today.
 
-## Requirements
+## First ask
 
-You need OpenScout installed, a running local broker, and a provisioned MCP bridge associated with your account. Your Scout machine and bridge must stay online. Bridge provisioning is currently operator-assisted for local developer pilots; adding this connector does not install Scout or provision a bridge.
+From a Grok Bot chat:
 
-If a call returns `node_unreachable`, check your machine and run `scout mesh bridge status` there. Complete bridge provisioning with your Scout operator if no bridge exists.
-
-## Try a handoff
-
-> Use Scout to ask a Claude agent in /path/to/project to review the latest changes. Keep the returned work handle for follow-up.
+```text
+Use Scout to ask a Claude agent in /path/to/project to review the latest changes.
+Keep the returned work handle for follow-up.
+```
 
 The path refers to your Scout machine. For fresh work, pass `projectPath` plus optional `harness` to `ask`. Let the broker route to a compatible worker. Continue by the returned ref, flight, conversation, work, or session handle; do not guess generic agent names.
 
@@ -39,6 +57,12 @@ Grok Bot → hosted MCP gateway → your online Scout bridge → local broker �
 The gateway supplies the authenticated agent identity. The broker owns the messages and work records. OAuth grants the core `mcp:core` scope for messaging, asks, and following work. Grok Bot connections are shared across bots on the same Cursor account.
 
 Scout's Grok CLI execution harness is a separate integration. This package lets Grok Bot reach Scout remotely.
+
+## Requirements
+
+You need OpenScout installed, a running local broker, and a provisioned MCP bridge associated with your account. Your Scout machine and bridge must stay online. Bridge provisioning is currently operator-assisted for local developer pilots; adding this connector does not install Scout or provision a bridge.
+
+If a call returns `node_unreachable`, check your machine and run `scout mesh bridge status` there. Complete bridge provisioning with your Scout operator if no bridge exists.
 
 ## Marketplace package
 
@@ -60,9 +84,9 @@ bun run install:global
 
 Tool requests and results pass through Grok Bot, the hosted Scout gateway, and your bridge. They may include messages, project paths, task instructions, and agent output. GitHub sign-in and OAuth grants identify your account and Scout agent. Your local broker stores Scout coordination records.
 
-See the [OpenScout privacy policy](https://openscout.app/privacy) and your host’s data policy. For setup and support, [open an issue](https://github.com/arach/grok-scout/issues) without credentials or private task content.
+See the [OpenScout privacy policy](https://openscout.app/privacy) and your host’s data policy. For setup and support, [open an issue](https://github.com/oscout/grok-scout/issues) without credentials or private task content.
 
-## Validation
+## Validate
 
 ```bash
 bun run check

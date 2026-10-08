@@ -7,9 +7,9 @@ Submitted September 21, 2026 through https://cursor.com/marketplace/publish.
 - Publisher display name: OpenScout
 - Requested publisher handle: `openscout`
 - Plugin identifier: `grok-scout`
-- Repository: https://github.com/arach/grok-scout
-- Website: https://arach.github.io/grok-scout/
-- Logo: https://raw.githubusercontent.com/arach/grok-scout/main/assets/logo.svg
+- Repository: https://github.com/oscout/grok-scout
+- Website: https://oscout.github.io/grok-scout/
+- Logo: https://raw.githubusercontent.com/oscout/grok-scout/main/assets/logo.svg
 - Hosted MCP endpoint: https://mcp.oscout.net
 - Authentication: OAuth with GitHub sign-in and Scout consent
 

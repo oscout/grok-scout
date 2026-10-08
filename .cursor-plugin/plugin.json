@@ -6,7 +6,7 @@
     "name": "OpenScout"
   },
   "homepage": "https://openscout.app/grok/",
-  "repository": "https://github.com/arach/grok-scout",
+  "repository": "https://github.com/oscout/grok-scout",
   "license": "Apache-2.0",
   "logo": "assets/logo.svg",
   "keywords": [

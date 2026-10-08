@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" role="img" aria-labelledby="grok-light-t grok-light-d">
+<title id="grok-light-t">Scout and the hosted Grok Bot</title>
+<desc id="grok-light-d">Scout reaches the hosted Grok Bot gateway through an online local bridge; the route stops at the hosted boundary, where the gateway takes over.</desc>
+<rect width="1600" height="500" fill="#fbfaf7"/>
+<g transform="translate(111.44 209.38) scale(0.34426)">
+  <path d="M103.01 13.21 Q112 8 120.99 13.21 L198.01 57.79 Q207 63 207 73.39 L207 162.61 Q207 173 198.01 178.21 L120.99 222.79 Q112 228 103.01 222.79 L25.99 178.21 Q17 173 17 162.61 L17 73.39 Q17 63 25.99 57.79 Z" fill="none" stroke="#17181a" stroke-width="24" stroke-linejoin="round"/>
+  <path d="M112 70 154 94v48l-42 24-42-24V94Z" fill="#17181a"/></g>
+<rect x="1060" y="0" width="540" height="500" fill="#17181a" fill-opacity="0.03"/>
+<line x1="1060" y1="64" x2="1060" y2="222" stroke="#17181a" stroke-opacity="0.46" stroke-width="2" stroke-dasharray="8 10" stroke-linecap="round"/>
+<line x1="1060" y1="278" x2="1060" y2="436" stroke="#17181a" stroke-opacity="0.46" stroke-width="2" stroke-dasharray="8 10" stroke-linecap="round"/>
+<path d="M1046 226 H1074 M1046 274 H1074" fill="none" stroke="#17181a" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="560" y="206" width="260" height="88" rx="12" fill="none" stroke="#17181a" stroke-opacity="1" stroke-width="2"/>
+<circle cx="588" cy="234" r="5" fill="#17181a" fill-opacity="1"/>
+<line x1="606" y1="234" x2="710" y2="234" stroke="#17181a" stroke-opacity="0.46" stroke-width="3" stroke-linecap="round"/>
+<line x1="588" y1="264" x2="790" y2="264" stroke="#17181a" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
+<rect x="1172" y="112" width="280" height="196" rx="12" fill="none" stroke="#17181a" stroke-opacity="0.22" stroke-width="2"/>
+<rect x="1150" y="134" width="280" height="196" rx="12" fill="none" stroke="#17181a" stroke-opacity="0.22" stroke-width="2"/>
+<rect x="1128" y="156" width="280" height="196" rx="12" fill="none" stroke="#17181a" stroke-opacity="0.46" stroke-width="2"/>
+<svg x="1150.00" y="172.00" width="52.00" height="52.00" viewBox="0 0 100 100" overflow="visible">
+  <!-- Grok Bot mark (xAI), redrawn from x.ai/bot: a round face with two eyes. -->
+  <defs>
+    <mask id="grok-light-grok-eyes">
+      <rect width="100" height="100" fill="#fff"/>
+      <g stroke="#000" stroke-width="5.6" stroke-linecap="round">
+        <line x1="52" y1="35.5" x2="54.5" y2="47"/>
+        <line x1="77.5" y1="30.5" x2="80" y2="42"/>
+      </g>
+    </mask>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="#17181a" mask="url(#grok-light-grok-eyes)"/>
+</svg>
+<line x1="1222" y1="198" x2="1340" y2="198" stroke="#17181a" stroke-opacity="0.46" stroke-width="3" stroke-linecap="round"/>
+<line x1="1154" y1="300" x2="1350" y2="300" stroke="#17181a" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
+<line x1="1154" y1="324" x2="1250" y2="324" stroke="#17181a" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
+<path d="M1060 250 H1128" fill="none" stroke="#17181a" stroke-opacity="0.46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M186.8 250 H560" fill="none" stroke="#3a9a57" stroke-width="4" stroke-linecap="butt" stroke-linejoin="round"/><path d="M820 250 H1060" fill="none" stroke="#3a9a57" stroke-width="4" stroke-linecap="butt" stroke-linejoin="round"/>
+</svg>
